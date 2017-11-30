@@ -1,0 +1,14 @@
+#pragma once
+
+#include "resource.h"
+
+//-----------------------------------【游戏状态宏】---------------------------------------
+//	描述：运游戏运行状态
+//------------------------------------------------------------------------------------------------
+#define GAME_RUNNING_STATE_GUI 1		//游戏开始GUI界面
+#define GAME_RUNNING_STATE_INIT 2		//游戏加载界面
+#define GAME_RUNNING_STATE_UNDERWAY 3	//游戏进行中
+#define GAME_RUNNING_STATE_GAMEOVER 4	//游戏结束
+
+//游戏状态变量
+static int	g_GameRunningState=GAME_RUNNING_STATE_GUI;	//游戏状态
